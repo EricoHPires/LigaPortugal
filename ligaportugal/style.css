@@ -82,6 +82,8 @@ main{
 }
 .time:hover{
     background: linear-gradient(rgb(94, 93, 93),grey);
+    transform:scale(1.1);
+    transition:0.2s linear;
 }
 .time p{
     color:rgb(237, 246, 245);
@@ -105,7 +107,7 @@ main{
 }
 .card h2{
     display:flex;
-    font-size:2rem;
+    font-size:1.6rem;
     color:rgb(237, 246, 245);
     align-items:center;
     justify-content:center;
@@ -115,7 +117,7 @@ main{
 }
 .card h3{
     display:flex;
-    font-size:1.5rem;
+    font-size:1.2rem;
     color:rgb(237, 246, 245);
     align-items:center;
     justify-content:center;
@@ -160,7 +162,7 @@ section{
     text-align:center;
 }
 .info:hover{
-    background:linear-gradient(rgb(52, 52, 52),black);
+    background:linear-gradient(rgb(52, 52, 52),black);  
 }
 .info img{
     margin-bottom:20px
@@ -194,7 +196,7 @@ footer p{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    display: none; /* Escondido por padrão */
+    display: none;
     background-color: #000;
     color: #fff;
     border: none;
@@ -202,6 +204,11 @@ footer p{
     cursor: pointer;
     border-radius: 5px;
     font-size: 16px;
+}
+#toTopButton:hover{
+    background-color: linear-gradient(rgb(36, 36, 36),rgb(55, 55, 55));
+    transform:scale(1.1);
+    transition:0.2s linear;
 }
 
 
@@ -266,14 +273,26 @@ footer p{
     .mobile{
         display:flex;
         text-align:center;
-        font-size:1.5rem;
+        padding-left:5%;
+        padding-right:5%;
+        font-size:1.2rem;
         color:rgb(237, 246, 245);
     }
     .time{
         margin-bottom:2px
     }
     header{
+        margin-bottom:10px;
+    }
+    .logo{
         display:none
+    }
+    .titulo{
+        flex:100%;
+        margin-right:0;
+    }
+    .titulo p{
+        font-size:1.6rem
     }
     .tituloCard{
         margin-top:0;
@@ -297,5 +316,8 @@ footer p{
         padding-bottom:0px
     }
 }
+
+
+
 
 
